@@ -1,0 +1,519 @@
+{
+   "dashboards": [{
+      "autoswitchEnabled": false,
+      "columnCount": 1,
+      "columnProportion": "1",
+      "creationTime": 1538502356227,
+      "dashboardNavigations": {},
+      "description": "",
+      "disabled": false,
+      "gridsterMaxColumns": 12,
+      "hidden": false,
+      "homeTab": false,
+      "id": "47068fa1-23a8-43b6-a35c-49fab2ab3a06",
+      "importAttempts": 0,
+      "importComplete": true,
+      "isDefault": false,
+      "locked": false,
+      "name": "Custom Dashboards/Troubleshooting Cisco Ports",
+      "namePath": "Custom Dashboards",
+      "rank": 202,
+      "shared": false,
+      "temporary": false,
+      "userId": "dc28bdb0-202a-4747-90fe-842db2ce3987",
+      "widgetInteractions": [
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "6b45bc58-9d0a-4b0a-b58e-e9730c034424",
+            "widgetIdReceiver": "ebdc3b14-ac44-411a-99d4-3a46ab2789bf"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "6b45bc58-9d0a-4b0a-b58e-e9730c034424",
+            "widgetIdReceiver": "3ce9a2f1-8ed5-42af-97e1-ecadbb4c94fe"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "6b45bc58-9d0a-4b0a-b58e-e9730c034424",
+            "widgetIdReceiver": "9155d219-6e7c-47a0-9113-10f7f24a7d02"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "a7e078df-2276-4f92-9a1d-63d602870339",
+            "widgetIdReceiver": "b456bf24-20a2-4da7-9535-995986157611"
+         },
+         {
+            "type": "resourceId",
+            "widgetIdProvider": "a7e078df-2276-4f92-9a1d-63d602870339",
+            "widgetIdReceiver": "93c3ce59-aac6-49e7-8c07-3eac7d55f196"
+         }
+      ],
+      "widgets": [
+         {
+            "collapsed": false,
+            "config": {
+               "boxColumns": 1,
+               "boxHeight": null,
+               "labelSize": 12,
+               "maxCellCount": 100,
+               "metric": {
+                  "mode": "resourceKind",
+                  "resourceKindMetrics": [{
+                     "colorMethod": 1,
+                     "id": "extModel4979-1",
+                     "isStringMetric": false,
+                     "label": "Total Throughput",
+                     "link": "",
+                     "metricKey": "port_traffic|total_throughput",
+                     "metricName": "Port Traffic|Total Throughput",
+                     "metricUnitId": "kbitps",
+                     "orangeBound": null,
+                     "redBound": null,
+                     "resourceKindId": "resourceKind:id:0_::_",
+                     "resourceKindName": "Cisco Networking Port",
+                     "unit": "kbit/s",
+                     "yellowBound": null
+                  }],
+                  "resourceMetrics": []
+               },
+               "mode": {"layoutMode": "fixedView"},
+               "periodLength": "last24Hour",
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "relationshipMode": 0,
+               "resInteractionMode": null,
+               "roundDecimals": null,
+               "selfProvider": {"selfProvider": false},
+               "showDT": {"showDT": false},
+               "showMetricName": {"showMetricName": true},
+               "showMetricUnit": {"showMetricUnit": true},
+               "showResourceName": {"showResourceName": true},
+               "showSparkline": {"showSparkline": true},
+               "title": "3. What is the current total throughput on the selected port?",
+               "valueSize": 24,
+               "visualTheme": 6
+            },
+            "gridsterCoords": {
+               "h": 3,
+               "w": 12,
+               "x": 1,
+               "y": 9
+            },
+            "height": 153,
+            "id": "ebdc3b14-ac44-411a-99d4-3a46ab2789bf",
+            "title": "3. What is the current total throughput on the selected port?",
+            "type": "Scoreboard"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "additionalColumns": [
+                  {
+                     "boxLabel": "Port Name",
+                     "metricKey": "properties|port_name",
+                     "metricName": "Properties|Port Name",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "Power state",
+                     "metricKey": "properties|port_power_state",
+                     "metricName": "Properties|Power State",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "MAC Address",
+                     "metricKey": "properties|mac_addr",
+                     "metricName": "Properties|MAC Address",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "Switch Parent",
+                     "metricKey": "relationships|cisco_networking_switch_parent",
+                     "metricName": "Relationships|Switch Parents",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "Bandwidth (kbit/s)",
+                     "metricKey": "port_traffic|bandwidth",
+                     "metricName": "Port Traffic|Bandwidth (kbit/s)",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "Inbound Bandwidth Utilization (%)",
+                     "metricKey": "port_traffic|inbound_bandwidth_utilization",
+                     "metricName": "Port Traffic|Inbound Bandwidth Utilization (%)",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  },
+                  {
+                     "boxLabel": "Outbound Bandwidth Utilization (%)",
+                     "metricKey": "port_traffic|outbound_bandwidth_utilization",
+                     "metricName": "Port Traffic|Outbound Bandwidth Utilization (%)",
+                     "resourceKindId": "resourceKind:id:0_::_"
+                  }
+               ],
+               "mode": 0,
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "selectFirstRow": {"selectFirstRow": false},
+               "tagFilter": {
+                  "path": ["/source/kind/kind:resourceKind:id:0_::_"],
+                  "value": {
+                     "adapterInstance": [],
+                     "adapterKind": [],
+                     "bus": [],
+                     "collector": [],
+                     "day": [],
+                     "exclaim": false,
+                     "healthRange": [],
+                     "kind": ["resourceKind:id:0_::_"],
+                     "maintenanceSchedule": [],
+                     "state": [],
+                     "status": [],
+                     "tag": [],
+                     "tier": []
+                  }
+               },
+               "title": "2. Select a port"
+            },
+            "gridsterCoords": {
+               "h": 4,
+               "w": 12,
+               "x": 1,
+               "y": 5
+            },
+            "height": 210,
+            "id": "6b45bc58-9d0a-4b0a-b58e-e9730c034424",
+            "states": [
+               {
+                  "key": "permResGrid_widget_47068fa1-23a8-43b6-a35c-49fab2ab3a06_6b45bc58-9d0a-4b0a-b58e-e9730c034424",
+                  "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%25255Ewidth%25253Dn%2525253A354%255Eo%25253Aid%25253Ds%2525253Ah3%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah4%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah5%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A181%255Eo%25253Aid%25253Ds%2525253Ah6%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah7%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah8%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah9%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah10%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah11%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah12%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah13%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah14%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A144%255Eo%25253Aid%25253Ds%2525253Ah15%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A183%255Eo%25253Aid%25253Ds%2525253Ah16%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah17%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A119%255Eo%25253Aid%25253Ds%2525253Ah20%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A162%255Eo%25253Aid%25253Ds%2525253Ah18%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A137%255Eo%25253Aid%25253Ds%2525253Ah19%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A129%255Eo%25253Aid%25253Ds%2525253Ah21%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A168%255Eo%25253Aid%25253Ds%2525253Ah22%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A260%255Eo%25253Aid%25253Ds%2525253Ah23%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A254%255Eo%25253Aid%25253Ds%2525253Ah24%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A258%255Eo%25253Aid%25253Ds%2525253Ah25%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah26%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah27%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah28%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah29%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah30%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah31%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah32%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah33%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah34%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah35%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah36%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah37%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah38%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah39%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah40%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah41%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah42%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah43%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah44%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah45%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah46%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%5EstoreState%3Do%253Asorters%253Da%25253Ao%2525253Aroot%2525253Ds%252525253Adata%2525255Eproperty%2525253Ds%252525253AmetricValue_%252525253A%252525253A_properties%252525257Cethernet_type%2525255Edirection%2525253Ds%252525253ADESC"
+               },
+               {
+                  "key": "perm_toolbarVisible_widget_47068fa1-23a8-43b6-a35c-49fab2ab3a06_6b45bc58-9d0a-4b0a-b58e-e9730c034424",
+                  "value": "b%3A1"
+               }
+            ],
+            "title": "2. Select a port",
+            "type": "ResourceList"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "chartHeight": 115,
+               "metricKey": "port_traffic|inbound_throughput",
+               "metricLabel": "",
+               "metricName": "Inbound Throughput (bit/s)",
+               "metricType": {"metricType": "custom"},
+               "metricUnit": {
+                  "metricUnitId": -1,
+                  "metricUnitName": "Default Unit"
+               },
+               "mode": "self",
+               "paginationNumber": 15,
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "resourceKindId": "resourceKind:id:0_::_",
+               "selectFirstRow": {"selectFirstRow": false},
+               "selfProvider": {"selfProvider": false},
+               "showMetricLabel": {"showMetricLabel": false},
+               "showResourceName": {"showResourceName": true},
+               "sortBy": "metricValue",
+               "sortByDir": {"orderByDir": "asc"},
+               "tagFilter": null,
+               "title": "5.  Inbound throughput over the last 24 hours?",
+               "undefined": "Port Traffic|Inbound Throughput (bit/s)"
+            },
+            "gridsterCoords": {
+               "h": 4,
+               "w": 6,
+               "x": 7,
+               "y": 12
+            },
+            "height": 210,
+            "id": "3ce9a2f1-8ed5-42af-97e1-ecadbb4c94fe",
+            "states": [{
+               "key": "permDateRange_HealthChart_widget_47068fa1-23a8-43b6-a35c-49fab2ab3a06_3ce9a2f1-8ed5-42af-97e1-ecadbb4c94fe",
+               "value": "s%3A%7B%22dateRange%22%3A%22last6Hour%22%2C%22dateFrom%22%3Anull%2C%22dateTo%22%3Anull%2C%22timeFrom%22%3Anull%2C%22timeTo%22%3Anull%7D"
+            }],
+            "title": "5.  Inbound throughput over the last 24 hours?",
+            "type": "HealthChart"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "chartHeight": 115,
+               "metricKey": "port_traffic|outbound_throughput",
+               "metricLabel": "",
+               "metricName": "Port Traffic|Outbound Throughput (bit/s)",
+               "metricType": {"metricType": "custom"},
+               "metricUnit": {
+                  "metricUnitId": -1,
+                  "metricUnitName": "Default Unit"
+               },
+               "mode": "self",
+               "paginationNumber": 15,
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "resourceKindId": "resourceKind:id:0_::_",
+               "selectFirstRow": {"selectFirstRow": false},
+               "selfProvider": {"selfProvider": false},
+               "showMetricLabel": {"showMetricLabel": false},
+               "showResourceName": {"showResourceName": true},
+               "sortBy": "metricValue",
+               "sortByDir": {"orderByDir": "asc"},
+               "tagFilter": {
+                  "path": ["/source/kind/kind:resourceKind:id:0_::_"],
+                  "value": {
+                     "adapterInstance": [],
+                     "adapterKind": [],
+                     "bus": [],
+                     "collector": [],
+                     "day": [],
+                     "exclaim": false,
+                     "healthRange": [],
+                     "kind": ["resourceKind:id:0_::_"],
+                     "maintenanceSchedule": [],
+                     "state": [],
+                     "status": [],
+                     "tag": [],
+                     "tier": []
+                  }
+               },
+               "title": "4.  Outbound Throughput over the last 24 hours?",
+               "undefined": "Port Traffic|Outbound Throughput (bit/s)"
+            },
+            "gridsterCoords": {
+               "h": 4,
+               "w": 6,
+               "x": 1,
+               "y": 12
+            },
+            "height": 210,
+            "id": "9155d219-6e7c-47a0-9113-10f7f24a7d02",
+            "states": [{
+               "key": "permDateRange_HealthChart_widget_47068fa1-23a8-43b6-a35c-49fab2ab3a06_9155d219-6e7c-47a0-9113-10f7f24a7d02",
+               "value": "s%3A%7B%22dateRange%22%3A%22last6Hour%22%2C%22dateFrom%22%3Anull%2C%22dateTo%22%3Anull%2C%22timeFrom%22%3Anull%2C%22timeTo%22%3Anull%7D"
+            }],
+            "title": "4.  Outbound Throughput over the last 24 hours?",
+            "type": "HealthChart"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "additionalColumns": [
+                  {
+                     "boxLabel": "Model",
+                     "metricKey": "properties|model",
+                     "metricName": "Properties|Model",
+                     "resourceKindId": "resourceKind:id:1_::_"
+                  },
+                  {
+                     "boxLabel": "Serial Number",
+                     "metricKey": "properties|serial_number",
+                     "metricName": "Properties|Serial Number",
+                     "resourceKindId": "resourceKind:id:1_::_"
+                  },
+                  {
+                     "boxLabel": "CPU Utilization (%)",
+                     "metricKey": "device_status|cpu_utilization",
+                     "metricName": "Device Status|CPU Utilization (%)",
+                     "resourceKindId": "resourceKind:id:1_::_"
+                  },
+                  {
+                     "boxLabel": "Memory Utilization (%)",
+                     "metricKey": "device_status|memory_utilization",
+                     "metricName": "Device Status|Memory Utilization (%)",
+                     "resourceKindId": "resourceKind:id:1_::_"
+                  }
+               ],
+               "mode": 0,
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "selectFirstRow": {"selectFirstRow": false},
+               "tagFilter": {
+                  "path": ["/source/kind/kind:resourceKind:id:1_::_"],
+                  "value": {
+                     "adapterInstance": [],
+                     "adapterKind": [],
+                     "bus": [],
+                     "collector": [],
+                     "day": [],
+                     "exclaim": false,
+                     "healthRange": [],
+                     "kind": ["resourceKind:id:1_::_"],
+                     "maintenanceSchedule": [],
+                     "state": [],
+                     "status": [],
+                     "tag": [],
+                     "tier": []
+                  }
+               },
+               "title": "1. Select a Switch"
+            },
+            "gridsterCoords": {
+               "h": 4,
+               "w": 12,
+               "x": 1,
+               "y": 1
+            },
+            "height": 210,
+            "id": "a7e078df-2276-4f92-9a1d-63d602870339",
+            "states": [{
+               "key": "permResGrid_widget_47068fa1-23a8-43b6-a35c-49fab2ab3a06_a7e078df-2276-4f92-9a1d-63d602870339",
+               "value": "o%3Acolumns%3Da%253Ao%25253Aid%25253Ds%2525253Ah1%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah2%255Eo%25253Aid%25253Ds%2525253Ah3%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah4%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah5%25255Ewidth%25253Dn%2525253A221%255Eo%25253Aid%25253Ds%2525253Ah6%25255Ehidden%25253Db%2525253A1%255Eo%25253Aid%25253Ds%2525253Ah7%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah8%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah9%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah10%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah11%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah12%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah13%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah14%25255Ewidth%25253Dn%2525253A158%255Eo%25253Aid%25253Ds%2525253Ah15%25255Ehidden%25253Db%2525253A0%255Eo%25253Aid%25253Ds%2525253Ah17%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A891%255Eo%25253Aid%25253Ds%2525253Ah18%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A183%255Eo%25253Aid%25253Ds%2525253Ah16%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah19%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A148%255Eo%25253Aid%25253Ds%2525253Ah20%25255Ehidden%25253Db%2525253A0%25255Ewidth%25253Dn%2525253A177%255Eo%25253Aid%25253Ds%2525253Ah21%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah22%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah23%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah24%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah25%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah26%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah27%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah28%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah29%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah30%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah31%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah32%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah33%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah34%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah35%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah36%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah37%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah38%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah39%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah40%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah41%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah42%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah43%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah44%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah45%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100%255Eo%25253Aid%25253Ds%2525253Ah46%25255Ehidden%25253Db%2525253A1%25255Ewidth%25253Dn%2525253A100"
+            }],
+            "title": "1. Select a Switch",
+            "type": "ResourceList"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "configs": [{
+                  "attributeKind": {"value": ""},
+                  "color": {"thresholds": {
+                     "colors": [
+                        "#00ff00",
+                        "#888800",
+                        "#ff0000"
+                     ],
+                     "values": [
+                        0,
+                        50,
+                        100
+                     ]
+                  }},
+                  "colorBy": {
+                     "metricKey": "port_traffic|outpackets",
+                     "value": "Port Traffic|Outbound Packets (packets/s)"
+                  },
+                  "focusOnGroups": true,
+                  "groupBy": {
+                     "id": "004null002022CiscoNetworkingAdaptercisco_networking_switch",
+                     "parentId": "CiscoNetworkingAdapter",
+                     "parentText": "Cisco Networking",
+                     "text": "Cisco Networking Switch",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:1_::_"
+                  },
+                  "mode": {"mode": false},
+                  "name": "Ports with most Outbound Packets",
+                  "relationalGrouping": false,
+                  "resourceKind": "resourceKind:id:0_::_",
+                  "sizeBy": {
+                     "metricKey": null,
+                     "value": ""
+                  },
+                  "solidColoring": false,
+                  "tagFilter": null,
+                  "thenBy": null
+               }],
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "title": "6.  Ports on selected switch with most Outbound Packets (hover for details)?",
+               "value": 0
+            },
+            "gridsterCoords": {
+               "h": 6,
+               "w": 6,
+               "x": 1,
+               "y": 16
+            },
+            "height": 324,
+            "id": "b456bf24-20a2-4da7-9535-995986157611",
+            "states": [
+               {
+                  "key": "perm_HeatMap_widget_47068fa1-23a8-43b6-a35c-49fab2ab3a06_b456bf24-20a2-4da7-9535-995986157611",
+                  "value": "o%3A"
+               },
+               {
+                  "key": "perm_toolbarVisible_widget_47068fa1-23a8-43b6-a35c-49fab2ab3a06_b456bf24-20a2-4da7-9535-995986157611",
+                  "value": "b%3A1"
+               }
+            ],
+            "title": "6.  Ports on selected switch with most Outbound Packets (hover for details)?",
+            "type": "Heatmap"
+         },
+         {
+            "collapsed": false,
+            "config": {
+               "configs": [{
+                  "attributeKind": {"value": ""},
+                  "color": {"thresholds": {
+                     "colors": [
+                        "#00ff00",
+                        "#888800",
+                        "#ff0000"
+                     ],
+                     "values": [
+                        0,
+                        50,
+                        100
+                     ]
+                  }},
+                  "colorBy": {
+                     "metricKey": "port_traffic|inpackets",
+                     "value": "Port Traffic|Inbound Packets (packets/s)"
+                  },
+                  "focusOnGroups": true,
+                  "groupBy": {
+                     "id": "004null002022CiscoNetworkingAdaptercisco_networking_switch",
+                     "parentId": "CiscoNetworkingAdapter",
+                     "parentText": "Cisco Networking",
+                     "text": "Cisco Networking Switch",
+                     "type": "resourceKind",
+                     "typeId": "resourceKind:id:1_::_"
+                  },
+                  "mode": {"mode": false},
+                  "name": "Ports on selected switch with most inbound packets",
+                  "relationalGrouping": false,
+                  "resourceKind": "resourceKind:id:0_::_",
+                  "sizeBy": {
+                     "metricKey": null,
+                     "value": ""
+                  },
+                  "solidColoring": false,
+                  "tagFilter": null,
+                  "thenBy": null
+               }],
+               "refreshContent": {"refreshContent": true},
+               "refreshInterval": 300,
+               "title": "7.  Ports on selected switch with most Inbound Packets (hover for details)?",
+               "value": 0
+            },
+            "gridsterCoords": {
+               "h": 6,
+               "w": 6,
+               "x": 7,
+               "y": 16
+            },
+            "height": 324,
+            "id": "93c3ce59-aac6-49e7-8c07-3eac7d55f196",
+            "states": [
+               {
+                  "key": "perm_HeatMap_widget_47068fa1-23a8-43b6-a35c-49fab2ab3a06_93c3ce59-aac6-49e7-8c07-3eac7d55f196",
+                  "value": "o%3A"
+               },
+               {
+                  "key": "perm_toolbarVisible_widget_47068fa1-23a8-43b6-a35c-49fab2ab3a06_93c3ce59-aac6-49e7-8c07-3eac7d55f196",
+                  "value": "b%3A1"
+               }
+            ],
+            "title": "7.  Ports on selected switch with most Inbound Packets (hover for details)?",
+            "type": "Heatmap"
+         }
+      ]
+   }],
+   "entries": {"resourceKind": [
+      {
+         "adapterKindKey": "CiscoNetworkingAdapter",
+         "internalId": "resourceKind:id:0_::_",
+         "resourceKindKey": "cisco_networking_port"
+      },
+      {
+         "adapterKindKey": "CiscoNetworkingAdapter",
+         "internalId": "resourceKind:id:1_::_",
+         "resourceKindKey": "cisco_networking_switch"
+      }
+   ]},
+   "uuid": "0adb0fec-9134-4022-927a-ef5d1c2b4304"
+}
